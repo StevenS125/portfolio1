@@ -14,7 +14,10 @@ class Landing extends Component {
 
 render() {
     return (
-             <div>hello</div>
+             <div>
+                 
+                 
+                 <h1>this is my lander</h1>hello</div>
           )
           }
         }
