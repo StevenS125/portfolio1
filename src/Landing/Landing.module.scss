@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+.container {
+height: 100vh;
+width: 100%;
+background-color: #262629;
+}
+.landingImg {
+    height: 100vh;
+    width: 100%;
+    z-index: -3;
+}
+
+.heroTop {
+    font-family: 'Roboto Slab', serif;
+    font-size: 32pt;
+    line-height: 36pt;
+    color: white;
+    padding-top: 30vh;
+    text-align: center;
+}
+
+.name {
+    color: #3de71b; 
+}
+
+
+.heroButton {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: transparent; 
+}
+
+.heroButton:hover {
+    background-color: #3de71b; 
+    transition: background-color .8s linear;
+    color: white;
+    cursor: pointer;
+}
+
+// .ball {
+//     width: 70px;
+//     height: 70px;
+//     position: fixed;
+//     left: 15%;
+//     top:20%;
+//     border-radius: 50%;
+//     background: black;
+
+
+//     animation-name: rainbow;
+//     animation-duration: 5s;
+//     animation-iteration-count: infinite;
+
+//     @keyframes rainbow{
+//         0% {
+//          left: 20%;
+//          top: 10vh;
+//         }
+
+//         25% {
+//          left: 75%;
+//          top: 10vh;
+//         }
+ 
+//         50% {
+//            left: 75%;
+//        top: 75vh;
+         
+//           }
+
+//         75% {
+//             left: 10%;
+//             top: 75vh;
+//         }
+
+//         100% {
+//          left: 10%;
+//          top: 10vh;
+//         }
+//       }
+// }
+
+// .ball2 {
+//     width: 70px;
+//     height: 70px;
+//     margin: 50px auto;
+//     position: fixed;
+//     left: 10%;
+//     top:20%;
+//     border-radius: 50%;
+//     background: black;
+
+
+//     animation-name: order;
+//     animation-duration: 5s;
+//     animation-iteration-count: infinite;
+
+//     @keyframes order{ 
+//         0% {
+//             left: 75%;
+//             top: 75vh;
+//         }
+
+//         25% {
+//          left: 10%;
+//          top: 75vh;
+//         }
+ 
+//         50% {
+//             left: 10%;
+//             top: 10vh;
+         
+//           }
+
+//         75% {
+//             left: 75%;
+//             top: 10vh;
+//         }
+
+//         100% {
+//          left: 75%;
+//          top: 75vh;
+//         }
+//       }
+// }

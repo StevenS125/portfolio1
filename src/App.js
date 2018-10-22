@@ -3,7 +3,8 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 //components
-import Nav from './Nav/Nav.js';
+// import Nav from './Nav/Nav';
+import Landing from './Landing/Landing'
 //modules
 
 
@@ -23,7 +24,7 @@ class App extends Component {
       <Router>
         <div >
           <Switch>
-        <Route exact path="/" component={Nav}/>
+        <Route exact path="/" component={Landing}/>
         </Switch>
     </div>
     </Router>
