@@ -3,7 +3,7 @@
 .container {
 height: 100vh;
 width: 100%;
-background-color: #262629;
+background-color: #252934;
 }
 .landingImg {
     height: 100vh;
@@ -41,6 +41,20 @@ background-color: #262629;
     transition: background-color .8s linear;
     color: white;
     cursor: pointer;
+}
+
+.arrow:hover {
+    animation: rotate-btn .5s linear 3;
+    -webkit-animation: rotate-btn .5s linear 3;
+
+    @keyframes rotate-btn {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(90deg);
+        }
+      }
 }
 
 // .ball {

@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import styles from "./Landing.module.scss";
 import Typing from 'react-typing-animation';
 import {Animated} from "react-animated-css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 class Landing extends Component {
@@ -16,7 +17,7 @@ class Landing extends Component {
 render() {
     return (
              <div>
-                 <div className={styles.container}>
+                 <div className={styles.container} id="#">
                  <div>
                      <div className={styles.ball}></div>
                      <div className={styles.ball2}></div>
@@ -27,7 +28,7 @@ render() {
                 </Typing>
                 <div>
                 <Animated animationIn="fadeIn" animationInDelay={2000} isVisible={true} >
-                <button className={styles.heroButton}>View my work</button>
+                <button className={styles.heroButton}>View my work <span className={styles.arrow}><FontAwesomeIcon icon={faArrowAltCircleRight} size="md" /></span></button>
                 </Animated>
                 </div>
                 </div>

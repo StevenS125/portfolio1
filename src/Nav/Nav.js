@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import styles from "./Nav.module.scss";
-import {Animated} from "react-animated-css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
       
@@ -23,13 +21,7 @@ class Nav extends Component {
 
 openList = () => {
   return (
-    <Animated animationIn="fadeInDown" animationInDelay={0} isVisible={true}>
-          <div className={styles.mobileDrop}>
-                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/">Home</Link></div>
-                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Services">Services</Link></div>    
-                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Contact">Contact Us</Link></div>
-    </div>
-    </Animated>
+<div></div>
   );
 }
 
@@ -72,14 +64,14 @@ render() {
         return (
           <div>
               <div className={styles.navbar}>
-              <div className={styles.navTitle}>
-                     <div className={styles.navbarTitle}>Steve Snyder</div>
-                        </div>
+              <div className={styleMedia.linkBox}>
+<div className={styles.link}><a href="hello">Home</a></div>
+<div className={styles.link}><a href="buy">About</a></div>
+<div className={styles.link}><a href="eltonjohn">Portfolio</a></div>
+<div className={styles.link}><a href="pdiddy">Contact</a></div>
+</div>
                         <div className={styles.navBarLinks}>
                           <div className={styles.linkContainer}>
-                         <Link className={styles.links} to="/">Home</Link>
-                         <Link className={styles.links} to="/Services">Services</Link>   
-                         <Link className={styles.links} to="/Contact">Contact Us</Link>
                             <a className={styles.icons} href="https://facebook.com/piranhatechnologies" target="blank"><FontAwesomeIcon icon={faFacebook} size="xs" /></a>
                             <a className={styles.icons} href="https://twitter.com/thepiranhatech" target="blank"><FontAwesomeIcon icon={faTwitter} size="xs" /></a>  
                             <a className={styles.icons} href="https://linkedin.com/company/piranha-tech/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="xs" /></a>  
@@ -100,9 +92,6 @@ render() {
       { this.state.listopen ? this.openList() : false }
               </div>
         </div>
-        
-          
-
 );
 }
 }

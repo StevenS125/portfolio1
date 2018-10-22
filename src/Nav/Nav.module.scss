@@ -1,10 +1,13 @@
 .navbar {
     width: 100%;
+    background-color: #1B242F;
+    height:50px; 
+    color: white;
+    border-bottom: 3px solid #3de71b;
+    font-family: 'Raleway';
+    font-size: 20px;
 }
-.navTitle {
-    text-align: center;
-    height: 50px;
-}
+
 .navbarImg {
     height: 40px;
     width: 60px;
@@ -13,38 +16,24 @@
 
 .navbarTitle {
     font-size: 40px;
-    color: #014470;
+    color: #3de71b;
     font-weight: 800;
 }
 
-.linkContainer {
-    width: 100%;
-    height: 50px;
-    float: right;
-    text-align: center;
+.link {
+    margin: 10px 30px;
+    float: left;
+}
+.linkBox {
+    margin-left: 20px;
 }
 
 
-
-.links {
-    color: #014470;
-    padding: 10px;
-    font-family: 'Raleway';
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: 'none';
-}
-
-.links:hover {
-    transition: color .3s linear;
-    color: #f3f3f3;
-    cursor: pointer;
-}
 
 .icons {
     margin-left: 5px;
     margin-right: 5px;
-    color: #014470;
+    color: #3de71b;
     font-size: 30px;
 }
 
@@ -55,7 +44,7 @@
 .bar1, .bar2, .bar3 {
     width: 85px;
     height: 15px;
-    background-color: #014470;
+    background-color: #3de71b;
     margin: 21px 20px;
     transition: 0.4s;
 }
@@ -74,28 +63,15 @@
         display: none;
     }
 
-    .navbarImg {
-        display: none;
-        margin-top: 15px;
-        margin-left: 10px;
-        float: left;
-        height: 100px;
-        width: 150px;
-    }
 
 
 
-    .linkContainer {
-        display: none;
-        width: 50%;
-        height: 80px;
-        float: right;
-    }
+
 
     .navbarTitle {
         display: none;
         font-size: 50px;
-        color: #014470;
+        color: #3de71b;
         font-weight: 800;
         width: 100%;
         margin-right: 0;
@@ -106,7 +82,7 @@
         font-size: 60px;
         display: block;
         font-weight: bold;
-        color: #014470;
+        color: #3de71b;
         text-align: start;
         z-index: 9;
         padding-top: 20px;
@@ -127,7 +103,7 @@
     .burger {
         margin-top: 10px;
         margin-right: 20px; 
-        border: 2px solid #014470;
+        border: 2px solid #3de71b;
         height: 140px;
         width: 130px;
         display: block;
@@ -135,18 +111,11 @@
         float: left;
     }
 
-    .linksMobile {
-        width: 100%;
-        height:100px;
-        font-size: 80px;
-        color: #014470;
-        text-align: center;
-    }
 
     .bar1 {
         width: 85px;
         height: 15px;
-        background-color: #014470;
+        background-color: #3de71b;
         margin: 21px 20px;
         transition: 0.4s;
     }
@@ -154,7 +123,7 @@
     .barChange1 {
         width: 130px;
         height: 15px;
-        background-color: #014470;
+        background-color: #3de71b;
         margin: 21px 20px;
         transition: 0.4s;
         -webkit-transform: rotate(-45deg) translate(-20px, -15px);
@@ -169,7 +138,7 @@
         transition: 0.4s;
         width: 130px;
         height: 15px;
-        background-color: #014470;
+        background-color: #3de71b;
         margin: 20px 20px;
         -webkit-transform: rotate(-45deg) translate(-20px, 15px);
         transform: rotate(45deg) translate(-20px, 15px);

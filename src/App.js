@@ -3,31 +3,36 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 //components
-// import Nav from './Nav/Nav';
-import Landing from './Landing/Landing'
+import Nav from './Nav/Nav';
+import Landing from './Landing/Landing';
+import About from './About/About';
 //modules
 
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faPalette, faCode, faLaptop } from '@fortawesome/free-solid-svg-icons'
+import { faPalette, faCode, faLaptop, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faPalette, faCode, faLaptop, faFacebook, faTwitter, faLinkedin )
+library.add(faPalette, faCode, faLaptop, faFacebook, faTwitter, faLinkedin, faArrowCircleRight )
 
 
 
 class App extends Component {
   render() {
     return (
-  
-      <Router>
-        <div >
-          <Switch>
-        <Route exact path="/" component={Landing}/>
-        </Switch>
-    </div>
-    </Router>
+      <div>
+<Landing />
+<Nav />  
+<About />
+</div>
+    //   <Router>
+    //     <div >
+    //       <Switch>
+    //     <Route exact path="/" component={Landing}/>
+    //     </Switch>
+    // </div>
+    // </Router>
     );
   }
 }
