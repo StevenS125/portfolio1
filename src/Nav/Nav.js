@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import styles from "./Nav.module.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
       
 
 
@@ -64,14 +62,7 @@ render() {
 <div className={styles.link}><a href="eltonjohn">Portfolio</a></div>
 <div className={styles.link}><a href="pdiddy">Contact</a></div>
 </div>
-                        <div className={styles.navBarLinks}>
-                          <div className={styles.linkContainer}>
-                            <a className={styles.icons} href="https://facebook.com/piranhatechnologies" target="blank"><FontAwesomeIcon icon={faFacebook} size="xs" /></a>
-                            <a className={styles.icons} href="https://twitter.com/thepiranhatech" target="blank"><FontAwesomeIcon icon={faTwitter} size="xs" /></a>  
-                            <a className={styles.icons} href="https://linkedin.com/company/piranha-tech/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="xs" /></a>  
-                          </div>
-                          
-                         </div>
+
           </div>
           <div className={styles.navbarMobile}>
                          <div className={styles.burger} onClick={this.toggleList}>

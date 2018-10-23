@@ -9,15 +9,16 @@ import "animate.css/animate.min.css";
 import Nav from './Nav/Nav';
 import Landing from './Landing/Landing';
 import About from './About/About';
+import Profile from './Profile/Profile';
 //modules
 
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faPalette, faCode, faLaptop, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faLinkedin, faJsSquare } from '@fortawesome/free-brands-svg-icons'
+import { faPalette, faCode, faLaptop, faArrowCircleRight, faTachometerAlt, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faPalette, faCode, faLaptop, faFacebook, faTwitter, faLinkedin, faArrowCircleRight )
+library.add(faPalette, faCode, faLaptop, faFacebook, faTwitter, faLinkedin, faArrowCircleRight, faTachometerAlt, faUserCheck, faJsSquare )
 
 
 
@@ -28,6 +29,7 @@ class App extends Component {
 <Landing />
 <Nav />  
 <About />
+<Profile />
 </div>
     //   <Router>
     //     <div >

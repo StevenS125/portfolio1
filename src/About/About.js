@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styles from "./About.module.scss";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faJsSquare} from '@fortawesome/free-brands-svg-icons';
 
 
 class About extends Component {
@@ -25,7 +25,7 @@ render() {
 
             <div className={styles.feature}>
             <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={200} animatePreScroll={false}>
-              <FontAwesomeIcon icon="code" size="5x" color="green" />
+              <FontAwesomeIcon icon="code" size="5x" color="#bf0154" />
       <h4>Responsive</h4>
         <p>
        I work to provide solutions that look clean and work on all devices.
@@ -35,7 +35,7 @@ render() {
 
             <div className={styles.feature}>
             <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={400} animatePreScroll={false}>
-            <FontAwesomeIcon icon="palette" size="5x" color="green" />
+            <FontAwesomeIcon icon="user-check" size="5x" color="#bf0154" />
             
                 <h4>Intuitive</h4>
                 <p>
@@ -46,7 +46,7 @@ render() {
 
                       <div className={styles.feature}>
                       <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={600} animatePreScroll={false}>
-                      <FontAwesomeIcon icon={faTwitter} size="5x" color="green" /> &nbsp;
+                      <FontAwesomeIcon icon={faJsSquare} size="5x" color="#bf0154" /> &nbsp;
       
               <h4>Dynamic</h4>
               <p>
@@ -57,9 +57,9 @@ render() {
         <div className={styles.feature}>
         <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={800} animatePreScroll={false}>
          
-          <FontAwesomeIcon icon="laptop" size="5x" color="green"/>
+          <FontAwesomeIcon icon="tachometer-alt" size="5x" color="#bf0154"/>
               <h4>Fast</h4>
-                 <p>In our fast past world I work to provide solutions that don't keep your users waiting.</p>
+                 <p>In our fast paced world I work to provide solutions that don't keep your users waiting.</p>
                 </ScrollAnimation>
                 </div>
                   </div>
