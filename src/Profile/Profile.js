@@ -13,7 +13,33 @@ class Profile extends Component {
 
 render() {
     return (
-<div></div>
+<div>
+        <div className={styles.profileContainer}>
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} animatePreScroll={false}>
+                <div className={styles.profileLeft}>
+                    <img className={styles.profImg} src="./profilepic.jpg" alt="Steve Snyder"></img>
+                        <div className={styles.profHead}>Who Am I?</div>
+                        <div className={styles.profDesc}>I have anchor arms</div>
+                        <div className={styles.profDesc}>I have anchor arms</div>
+                        <div className={styles.profDesc}>I have anchor arms</div>
+                </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true} animatePreScroll={false}>
+        <div className={styles.profRight}>
+        <div className={styles.bar + " " + styles.bar1}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        <div className={styles.bar}>60%</div>
+        </div>
+        </ScrollAnimation>
+        </div>
+</div>
     )
 }
 }
