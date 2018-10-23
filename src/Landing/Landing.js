@@ -28,7 +28,7 @@ render() {
                 </Typing>
                 <div>
                 <Animated animationIn="fadeIn" animationInDelay={2000} isVisible={true} >
-                <button className={styles.heroButton}>View my work <span className={styles.arrow}><FontAwesomeIcon icon={faArrowAltCircleRight} size="md" /></span></button>
+                <button className={styles.heroButton}>View my work <span className={styles.arrow}><FontAwesomeIcon icon={faArrowAltCircleRight} size="1x" /></span></button>
                 </Animated>
                 </div>
                 </div>

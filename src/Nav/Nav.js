@@ -16,9 +16,6 @@ class Nav extends Component {
                 };
 }
 
-
-
-
 openList = () => {
   return (
 <div></div>
@@ -56,10 +53,7 @@ if (!this.state.listopen) {
   }
 
 
-
 render() {
-
-
 
         return (
           <div>

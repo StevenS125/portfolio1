@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+// import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+
+// Animate.css import for scrollAnimation
+import "animate.css/animate.min.css";
 
 
 //components

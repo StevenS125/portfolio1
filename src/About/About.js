@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styles from "./About.module.scss";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 
 class About extends Component {
@@ -16,52 +16,55 @@ class About extends Component {
 render() {
     return (
         <div>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false}></ScrollAnimation>
-            <div className={styles.aboutTitle}>About</div>
-          <div>
-            <div className={styles.servicesHead}>
-            Some of our Services
-            </div>
+          <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} animatePreScroll={false}>
+            <div className={styles.aboutTitle}>ABOUT</div>
+          </ScrollAnimation>
+
+
+        <div className={styles.aboutContainer}>
+
             <div className={styles.feature}>
+            <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={200} animatePreScroll={false}>
               <FontAwesomeIcon icon="code" size="5x" color="green" />
-              
-      <h4>Web Design</h4>
+      <h4>Responsive</h4>
         <p>
-        We sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. We are minimalistic and truly believe that less is more.
+       I work to provide solutions that look clean and work on all devices.
         </p>
+        </ScrollAnimation>
             </div>
 
-        <div className={styles.feature}>
-          <FontAwesomeIcon icon="palette" size="5x" color="green" />
-            
-            <h4>Logo Design</h4>
-              <p>
-                Need a new or updated logo? You've come to the right place with thousands of logos to choose from and have us customize to fit your business brand.
-              </p>
-        </div>
-
-                        <div className={styles.feature}>
-              <FontAwesomeIcon icon={faTwitter} size="5x" color="green" /> &nbsp;
-              <FontAwesomeIcon icon={faFacebook} size="5x" color="green" /> &nbsp;
-              <FontAwesomeIcon icon={faLinkedin} size="5x" color="green" />
-      
-      <h4>Social Media Management</h4>
-        <p>
-Let us help you design your Social Media Pages, Marketing Campaigns or just plain setting up your social media to reach your desired demographic of clients. 
-        </p>
-            </div>
             <div className={styles.feature}>
-          <FontAwesomeIcon icon="laptop" size="5x" color="green"/>
-           
-              <h4>Client Support</h4>
-                 <p>Errors on your site or Application? We have exeprtise in debugging software and helping to get you up and running again quickly </p>
-                
-                     </div>
-                 </div>
+            <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={400} animatePreScroll={false}>
+            <FontAwesomeIcon icon="palette" size="5x" color="green" />
+            
+                <h4>Intuitive</h4>
+                <p>
+                My mission is for every page to be as easy to use and interactive as possible. 
+                </p>
                 </ScrollAnimation>
-        </div>
-    )
+                </div>
 
+                      <div className={styles.feature}>
+                      <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={600} animatePreScroll={false}>
+                      <FontAwesomeIcon icon={faTwitter} size="5x" color="green" /> &nbsp;
+      
+              <h4>Dynamic</h4>
+              <p>
+              I love making web pages come to life with the latest animations and eye catching designs. 
+              </p>
+        </ScrollAnimation>
+        </div>
+        <div className={styles.feature}>
+        <ScrollAnimation animateIn="flipInX" animateOnce={true} delay={800} animatePreScroll={false}>
+         
+          <FontAwesomeIcon icon="laptop" size="5x" color="green"/>
+              <h4>Fast</h4>
+                 <p>In our fast past world I work to provide solutions that don't keep your users waiting.</p>
+                </ScrollAnimation>
+                </div>
+                  </div>
+                    </div>
+    )
 }}
 
 export default About
