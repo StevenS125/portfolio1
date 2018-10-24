@@ -26,16 +26,16 @@ render() {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInRight" animateOnce={true} animatePreScroll={false}>
         <div className={styles.profRight}>
-        <div className={styles.bar + " " + styles.bar1}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
-        <div className={styles.bar}>60%</div>
+        <div className={styles.bar + " " + styles.bar1}><span className={styles.barText}>85%</span><span className={styles.barName}>JavaScript</span></div>
+        <div className={styles.bar + " " + styles.bar2}><span className={styles.barText}>90%</span><span className={styles.barName}>CSS</span></div>
+        <div className={styles.bar + " " + styles.bar3}><span className={styles.barText}>90%</span><span className={styles.barName}>HTML</span></div>
+        <div className={styles.bar + " " + styles.bar4}><span className={styles.barText}>85%</span><span className={styles.barName}>React</span></div>
+        <div className={styles.bar + " " + styles.bar5}><span className={styles.barText}>80%</span><span className={styles.barName}>Node.js</span></div>
+        <div className={styles.bar + " " + styles.bar6}><span className={styles.barText}>70%</span><span className={styles.barName}>UI/UX</span></div>
+        <div className={styles.bar + " " + styles.bar7}><span className={styles.barText}>60%</span><span className={styles.barName}>Angular</span></div>
+        <div className={styles.bar + " " + styles.bar8}><span className={styles.barText}>75%</span><span className={styles.barName}>SASS</span></div>
+        <div className={styles.bar + " " + styles.bar9}><span className={styles.barText}>85%</span><span className={styles.barName}>Bootstrap</span></div>
+        <div className={styles.bar + " " + styles.bar10}><span className={styles.barText}>60%</span><span className={styles.barName}>SQL/MySQL</span></div>
         </div>
         </ScrollAnimation>
         </div>

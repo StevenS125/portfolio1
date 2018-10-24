@@ -44,6 +44,22 @@
     float: left;
 }
 
+.barName {
+    background-color: #e485b0;
+    color: white;
+    height:30px;
+    width: 100px;
+    z-index: 30;
+    float: left;
+    padding-left: 10px;
+}
+
+.barText {
+    float: right;
+    color: #444649;
+    margin-right: 10px;
+}
+
 .bar{
     height: 30px;
     max-width: 800px;
@@ -51,7 +67,7 @@
     line-height: 30px;
     font-size: 16px;
     color: white;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 0px;
     position: relative;
   }
 
@@ -92,6 +108,34 @@
     max-width: 60%;
   }
 
+
   .bar1::after{
+    max-width: 85%;
+  }
+  .bar2::after{
+    max-width: 90%;
+  }
+  .bar3::after{
+    max-width: 90%;
+  }
+  .bar4::after{
+    max-width: 85%;
+  }
+  .bar5::after{
     max-width: 80%;
+  }
+  .bar6::after{
+    max-width: 70%;
+  }
+  .bar7::after{
+    max-width: 60%;
+  }
+  .bar8::after{
+    max-width: 75%;
+  }
+  .bar9::after{
+    max-width: 85%;
+  }
+  .bar10::after{
+    max-width: 60%;
   }
