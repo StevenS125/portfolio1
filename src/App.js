@@ -10,6 +10,7 @@ import Nav from './Nav/Nav';
 import Landing from './Landing/Landing';
 import About from './About/About';
 import Profile from './Profile/Profile';
+import Projects from './Projects/Projects';
 //modules
 
 
@@ -30,6 +31,7 @@ class App extends Component {
 <Nav />  
 <About />
 <Profile />
+<Projects />
 </div>
     //   <Router>
     //     <div >
