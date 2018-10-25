@@ -11,6 +11,7 @@ import Landing from './Landing/Landing';
 import About from './About/About';
 import Profile from './Profile/Profile';
 import Projects from './Projects/Projects';
+import Contact from './Contact/Contact';
 //modules
 
 
@@ -32,6 +33,7 @@ class App extends Component {
 <About />
 <Profile />
 <Projects />
+<Contact />
 </div>
     //   <Router>
     //     <div >

@@ -19,9 +19,10 @@ render() {
                 <div className={styles.profileLeft}>
                     <img className={styles.profImg} src="./profilepic.jpg" alt="Steve Snyder"></img>
                         <div className={styles.profHead}>Who Am I?</div>
-                        <div className={styles.profDesc}>I have anchor arms</div>
-                        <div className={styles.profDesc}>I have anchor arms</div>
-                        <div className={styles.profDesc}>I have anchor arms</div>
+                        <div className={styles.profDesc}>I am a Front End Developer based out of Charlotte, NC</div>
+                        <div className={styles.profDesc}>with a drive to create UI effects, animations</div>
+                        <div className={styles.profDesc}>and applications that reach out and get your users exicted!</div>
+                        <div className={styles.profDesc}>Lets make something truly exceptional</div>
                 </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInRight" animateOnce={true} animatePreScroll={false}>
