@@ -1,0 +1,35 @@
+.footContainer {
+    height: 200px;
+    width: 100%;
+    background: #1B242F;
+}
+
+.socialLinks {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    padding: 20px;
+    margin: 20px;
+    background: #252934;
+    color: white;
+}
+
+.icons:hover {
+    box-shadow: 0 0 0 1px rgb(255, 255, 255);
+    transition: all 200ms ease-out;
+}
+
+.footName {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800; 
+    color: white;
+    width: 100%;
+}

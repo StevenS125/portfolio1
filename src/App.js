@@ -12,15 +12,16 @@ import About from './About/About';
 import Profile from './Profile/Profile';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 //modules
 
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebook, faTwitter, faLinkedin, faJsSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faTwitter, faLinkedin, faJsSquare, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faPalette, faCode, faLaptop, faArrowCircleRight, faTachometerAlt, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faPalette, faCode, faLaptop, faFacebook, faTwitter, faLinkedin, faArrowCircleRight, faTachometerAlt, faUserCheck, faJsSquare )
+library.add(faPalette, faCode, faLaptop, faGithub, faFacebook, faTwitter, faLinkedin, faArrowCircleRight, faTachometerAlt, faUserCheck, faJsSquare )
 
 
 
@@ -34,6 +35,7 @@ class App extends Component {
 <Profile />
 <Projects />
 <Contact />
+<Footer />
 </div>
     //   <Router>
     //     <div >
