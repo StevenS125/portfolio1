@@ -18,9 +18,9 @@ render() {
 <div>
     <div className={styles.footContainer}>
 <div className={styles.socialLinks}>
-<div><a className={styles.icons} href="https://facebook.com/piranhatechnologies" target="blank"><FontAwesomeIcon icon={faFacebook} size="2x" /></a></div>
-<div><a className={styles.icons} href="https://twitter.com/thepiranhatech" target="blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a></div>  
-<div><a className={styles.icons} href="https://linkedin.com/company/piranha-tech/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></div> 
+<div><a className={styles.icons} href="https://www.facebook.com/stevensnyderisthebest" target="blank"><FontAwesomeIcon icon={faFacebook} size="2x" /></a></div>
+<div><a className={styles.icons} href="https://github.com/stevens125" target="blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a></div>  
+<div><a className={styles.icons} href="https://www.linkedin.com/in/steven-snyder/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></div> 
 </div>
 <div className={styles.footName}>Steve Snyder &copy; 2018</div>
 </div>
