@@ -21,8 +21,6 @@ class Projects extends Component {
 // creates feature box div 
 
     openBox = () => {
- 
-        console.log("cheerios");
         return (
           <Animated animationIn="fadeIn" animationInDelay={0} isVisible={true}>
                 <div className={styles.featureBox} onClick={this.toggleBox} >
@@ -38,8 +36,7 @@ class Projects extends Component {
 
     //   sets state to open/close the featured profile box
 
-      toggleBox = e => {
-          console.log(e.currentTarget);
+      toggleBox = () => {
         if (!this.state.boxOpen) {
           this.setState({
             boxOpen: true,
@@ -80,6 +77,7 @@ render() {
                         <div className={this.state.hide}>
                                 <img className={styles.projImg} src="./STT.png" alt="Steve Snyder"></img>
                                 <div className={styles.middle}>
+                                <div className={styles.middleText}>Straight Talk Today</div>
                                     <button className={styles.btnOverlay} onClick={this.toggleBox}>Click Me</button>
                                 </div>
                         </div>
@@ -88,6 +86,7 @@ render() {
                         <div className={this.state.hide}>
                                 <img className={styles.projImg} src="./Contact.png" alt="Steve Snyder"></img>
                                 <div className={styles.middle}>
+                                <div className={styles.middleText}>Contact Manager</div>
                                     <button className={styles.btnOverlay} onClick={this.toggleBox}>Click Me</button>
                                 </div>
                         </div>
@@ -96,6 +95,7 @@ render() {
                         <div className={this.state.hide}>
                                 <img className={styles.projImg} src="./forex.png" alt="Steve Snyder"></img>
                                 <div className={styles.middle}>
+                                <div className={styles.middleText}>Forex Trading App</div>
                                     <button className={styles.btnOverlay} onClick={this.toggleBox}>Click Me</button>
                                 </div>
                         </div>
@@ -104,6 +104,7 @@ render() {
                         <div className={this.state.hide}>
                                 <img className={styles.projImg} src="./College.png" alt="Steve Snyder"></img>
                                 <div className={styles.middle}>
+                                <div className={styles.middleText}>College Selection</div>
                                     <button className={styles.btnOverlay} onClick={this.toggleBox}>Click Me</button>
                                 </div>
                         </div>
@@ -112,6 +113,7 @@ render() {
                         <div className={this.state.hide}>
                                 <img className={styles.projImg} src="./KKustoms.png" alt="Steve Snyder"></img>
                                 <div className={styles.middle}>
+                                <div className={styles.middleText}>KIM'S KUSTOMS</div>
                                     <button className={styles.btnOverlay} onClick={this.toggleBox}>Click Me</button>
                                 </div>
                         </div>

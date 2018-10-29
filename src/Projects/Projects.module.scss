@@ -53,6 +53,11 @@
 
 .middleText {
     padding: 20px 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 26pt;
+    font-weight: 600;
+    line-height: 28pt;
+    color: #bf0154;
 }
 
 .projBox:hover .projImg{
@@ -62,8 +67,8 @@ opacity: 0.3;
 
 .projBox:hover .middle {
     opacity: 1;
-    background: #444649;
-    color: white;
+    background: white;
+    color: #bf0154;
     height: 100%;
     width: 100%;
 }
@@ -91,10 +96,10 @@ opacity: 0.3;
 }
 
 .btnOverlay {
-    color: white;
+    color: #bf0154;
     font-family: 'Raleway';
     font-size: 30px;
-    border: 2px solid white;
+    border: 2px solid #bf0154;
     padding: 10px;
     border-radius: 5%;
     background-color: transparent; 
@@ -102,8 +107,8 @@ opacity: 0.3;
 }
 
 .btnOverlay:hover {
-    background-color: white; 
+    background-color: #bf0154; 
     transition: background-color .8s linear;
-    color: #bf0154;
+    color: white;
     cursor: pointer;
 }
