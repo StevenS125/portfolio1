@@ -51,6 +51,10 @@
 
 }
 
+.middleText {
+    padding: 20px 0;
+}
+
 .projBox:hover .projImg{
 opacity: 0.3;
 
@@ -58,6 +62,10 @@ opacity: 0.3;
 
 .projBox:hover .middle {
     opacity: 1;
+    background: #444649;
+    color: white;
+    height: 100%;
+    width: 100%;
 }
 
 .featureBox {
@@ -80,4 +88,22 @@ opacity: 0.3;
 
 .hidden {
     display: none;
+}
+
+.btnOverlay {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+.btnOverlay:hover {
+    background-color: white; 
+    transition: background-color .8s linear;
+    color: #bf0154;
+    cursor: pointer;
 }

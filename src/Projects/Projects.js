@@ -71,6 +71,7 @@ render() {
                         <div className={this.state.hide}>
                                 <img className={styles.projImg} src="./Ptech.png" alt="Steve Snyder"></img>
                                 <div className={styles.middle}>
+                                <div className={styles.middleText}>PIRANHA TECH</div>
                                     <button className={styles.btnOverlay} onClick={this.toggleBox}>Click Me</button>
                                 </div>
                         </div>
