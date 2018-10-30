@@ -23,7 +23,16 @@
 .link {
     margin: 10px 30px;
     float: left;
+    color: #bf0154;
+    text-decoration: none;
 }
+
+.link:hover {
+    transition: background-color .8s linear;
+    color: white;
+    cursor: pointer;
+}
+
 .linkBox {
     margin-left: 20px;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from "./Nav.module.scss";
+import ScrollIntoView from 'react-scroll-into-view'
       
 
 
@@ -57,14 +58,22 @@ render() {
           <div>
               <div className={styles.navbar}>
               <div className={styleMedia.linkBox}>
-<div className={styles.link}><a href="hello">Home</a></div>
-<div className={styles.link}><a href="buy">About</a></div>
-<div className={styles.link}><a href="eltonjohn">Portfolio</a></div>
-<div className={styles.link}><a href="pdiddy">Contact</a></div>
+              <ScrollIntoView selector="#gotanid" alignToTop={true}>
+              <div className={styles.link}>Home</div>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#gotanid" alignToTop={true}>
+                <div className={styles.link}>About</div>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#gotanid" alignToTop={true}>
+                <div className={styles.link}>Portfolio</div>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#gotanid" alignToTop={true}>
+               <div className={styles.link}>Contact</div>
+                </ScrollIntoView>
 </div>
 
           </div>
-          <div className={styles.navbarMobile}>
+          {/* <div className={styles.navbarMobile}>
                          <div className={styles.burger} onClick={this.toggleList}>
                                 <div className={this.state.bar1}></div>
                                 <div className={this.state.bar2}></div>
@@ -72,7 +81,7 @@ render() {
                               </div>
                           <div className={styles.mobileHead}>Piranha Technologies</div>
                         
-                      </div>        
+                      </div>         */}
           <div className={styles.mobileRow}>
       { this.state.listopen ? this.openList() : false }
               </div>

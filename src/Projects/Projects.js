@@ -29,6 +29,7 @@ class Projects extends Component {
                 <div className={styles.projTop}>{this.state.projTitle}</div>
                 <img src={this.state.projImg} className={styles.dispImg} alt={this.state.altTitle}></img>
                 <div className={styles.projDescript}>{this.state.projDesc}</div>
+                <div><a href="https://github.com/stevens125" target="blank">Hello</a></div> 
                 </div>
                      
                 </div>
@@ -89,7 +90,7 @@ class Projects extends Component {
     handleForex = () => {
         this.setState({
           projImg: "./forexDisplay.png",
-          projDesc: "This Foreign Ex",
+          projDesc: "This application was made to handle currency trades to measure exchange rates and profit/loss overtime to keep track of accounts for foreign currency trading. It is built with MongoDB, Express, React and Node.JS",
           projTitle: "Foreign Exchange Trading App",
           altTitle: "Foreign Exchange Application Display"
         })
@@ -98,7 +99,7 @@ class Projects extends Component {
     handleCollege = () => {
         this.setState({
           projImg: "./PTechDisplay.png",
-          projDesc: "hello horsefucker",
+          projDesc: "Selecting a college can be difficult, with this application the goal was to provide your preferences and search our database based on ranking to pick the perfect school. It is built with Express, JavaScript and SQL",
           projTitle: "College Selection Application",
           altTitle: "College Selection Application Display Image"
         })
