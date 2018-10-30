@@ -84,17 +84,53 @@ opacity: 0.3;
 }
 
 .boxDesc {
-    width: 50vw;
+    width: 60vw;
     height: 80%;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     z-index: 2;
+    cursor: auto;
+}
+
+.btnBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 60px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .hidden {
     display: none;
+}
+
+.projBtn {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 20px;
+    border: 2px solid #bf0154;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: #bf0154; 
+}
+
+.projBtn:hover {
+    background-color: transparent; 
+    transition: background-color .8s linear;
+    color: #bf0154;
+    cursor: pointer;
+}
+
+.projBottom {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnOverlay {
@@ -134,8 +170,8 @@ opacity: 0.3;
 }
 
 .dispImg {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 
 }

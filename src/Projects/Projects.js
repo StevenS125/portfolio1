@@ -24,12 +24,15 @@ class Projects extends Component {
     openBox = () => {
         return (
           <Animated animationIn="fadeIn" animationInDelay={0} isVisible={true}>
-                <div className={styles.featureBox} onClick={this.toggleBox} >
+                <div className={styles.featureBox}>
                 <div className={styles.boxDesc}>
                 <div className={styles.projTop}>{this.state.projTitle}</div>
                 <img src={this.state.projImg} className={styles.dispImg} alt={this.state.altTitle}></img>
                 <div className={styles.projDescript}>{this.state.projDesc}</div>
-                <div><a href="https://github.com/stevens125" target="blank">Hello</a></div> 
+                <div className={styles.btnBox}>
+                <div className={styles.projBottom}><button className={styles.projBtn}>View Site</button></div> 
+                <div className={styles.projBottom}><button className={styles.projBtn}>Github</button></div>
+                </div>
                 </div>
                      
                 </div>
