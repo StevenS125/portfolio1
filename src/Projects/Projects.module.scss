@@ -84,9 +84,11 @@ opacity: 0.3;
 }
 
 .boxDesc {
-    width: 50%;
-    height: 100%;
-    margin: auto;
+    width: 50vw;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     z-index: 2;
 }
@@ -111,4 +113,29 @@ opacity: 0.3;
     transition: background-color .8s linear;
     color: white;
     cursor: pointer;
+}
+
+.projTop {
+    width: 100%;
+    text-align: center;
+    background-color: #bf0154;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    height: 40px;
+}
+
+.projDescript {
+    width: 90%;
+    margin: 5%;
+    color: #444649;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+.dispImg {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+
 }

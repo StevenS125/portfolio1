@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
+import ScrollIntoView from 'react-scroll-into-view'
 import styles from "./Landing.module.scss";
 import Typing from 'react-typing-animation';
 import {Animated} from "react-animated-css";
@@ -12,6 +13,7 @@ class Landing extends Component {
             super(props);
             this.state = {}
     }
+
 
 
 render() {
@@ -28,7 +30,9 @@ render() {
                 </Typing>
                 <div>
                 <Animated animationIn="fadeIn" animationInDelay={2000} isVisible={true} >
+                <ScrollIntoView selector="#gotanid" alignToTop={true}>
                 <button className={styles.heroButton}>View my work <span className={styles.arrow}><FontAwesomeIcon icon={faArrowAltCircleRight} size="1x" /></span></button>
+                </ScrollIntoView>
                 </Animated>
                 </div>
                 </div>
