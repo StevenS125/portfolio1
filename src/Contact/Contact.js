@@ -8,13 +8,58 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Contact extends Component {
     constructor(props) {
             super(props);
-            this.state = {}
+            this.state = {
+              fname: '',
+              lname: '',
+              email: '',
+              msg: ''
+            };
+            this.handleChange = this.handleChange.bind(this);
+            this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-
+    onChange = (e) => {
+      // Because we named the inputs to match their corresponding values in state, it's
+      // super easy to update the state
+      const state = this.state
+      state[e.target.name] = e.target.value;
+      this.setState(state);
+    }
+  
+    onSubmit = (e) => {
+      e.preventDefault();
+      // get our form data out of state
+      const pData = this.state;
+      fetch('https://ptmailer.herokuapp.com/api/', {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(pData)
+    }).then(function(response) {
+    })
+  
+    this.state = {
+        
+      fname: '',
+      lname: '',
+      email: '',
+      msg: ''
+    }
+  
+    document.getElementById('form').reset()
+   }
+    
     handleChange(event) {
-        this.setState({value: event.target.value});
-      }
+      this.setState({value: event.target.value});
+    }
+  
+    handleSubmit(event) {
+      event.preventDefault();
+    }
+  
+  
 
 render() {
     return (
@@ -55,7 +100,7 @@ render() {
   </div>
 </div>
 
-<input type="submit" value="Contact Us!" />
+<input type="submit" value="Contact Me!" />
 
 </form>
         </div>
