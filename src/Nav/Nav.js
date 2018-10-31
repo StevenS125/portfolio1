@@ -61,7 +61,7 @@ render() {
               <ScrollIntoView selector="#homeid" alignToTop={true}>
               <div className={styles.link}>Home</div>
                 </ScrollIntoView>
-                <ScrollIntoView selector="#AboutId" alignToTop={true}>
+                <ScrollIntoView selector="#aboutId" alignToTop={true}>
                 <div className={styles.link}>About</div>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#gotanid" alignToTop={true}>
