@@ -100,7 +100,7 @@ class Projects extends Component {
 
     handleForex = () => {
         this.setState({
-          projImg: "./forexDisplay.png",
+          projImg: "./forex.png",
           projDesc: "This application was made to handle currency trades to measure exchange rates and profit/loss overtime to keep track of accounts for foreign currency trading. It is built with MongoDB, Express, React and Node.JS",
           projTitle: "Foreign Exchange Trading App",
           altTitle: "Foreign Exchange Application Display",
@@ -111,7 +111,7 @@ class Projects extends Component {
 
     handleCollege = () => {
         this.setState({
-          projImg: "./PTechDisplay.png",
+          projImg: "./College.png",
           projDesc: "Selecting a college can be difficult, with this application the goal was to provide your preferences and search our database based on ranking to pick the perfect school. It is built with Express, JavaScript and SQL",
           projTitle: "College Selection Application",
           altTitle: "College Selection Application Display Image",
@@ -122,7 +122,7 @@ class Projects extends Component {
 
     handleKK = () => {
         this.setState({
-          projImg: "./KKDisplay.png",
+          projImg: "./KKdisplay.png",
           projDesc: "Kim's Kustom's is a full service furniture repair business that needed help with a marketing site. It was created with a create-react-app format with a Node backend",
           projTitle: "Kim's Kustoms",
           altTitle: "Kim's Customs Display Image",
