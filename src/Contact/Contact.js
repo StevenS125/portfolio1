@@ -19,7 +19,7 @@ class Contact extends Component {
 render() {
     return (
         <div>
-          <div className={styles.contactForm}>
+          <div className={styles.contactForm} id="contactId">
           <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} animatePreScroll={false}>
             <div className={styles.contactTitle}>CONTACT</div>
           </ScrollAnimation>

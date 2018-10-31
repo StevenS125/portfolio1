@@ -14,7 +14,7 @@ class Profile extends Component {
 render() {
     return (
 <div>
-        <div className={styles.profileContainer}>
+        <div className={styles.profileContainer} id="aboutId">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} animatePreScroll={false}>
                 <div className={styles.profileLeft}>
                     <img className={styles.profImg} src="./profilepic.jpg" alt="Steve Snyder"></img>

@@ -56,18 +56,18 @@ render() {
 
         return (
           <div>
-              <div className={styles.navbar}>
+              <div className={styles.navbar} id="homeid">
               <div className={styleMedia.linkBox}>
-              <ScrollIntoView selector="#gotanid" alignToTop={true}>
+              <ScrollIntoView selector="#homeid" alignToTop={true}>
               <div className={styles.link}>Home</div>
                 </ScrollIntoView>
-                <ScrollIntoView selector="#gotanid" alignToTop={true}>
+                <ScrollIntoView selector="#AboutId" alignToTop={true}>
                 <div className={styles.link}>About</div>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#gotanid" alignToTop={true}>
                 <div className={styles.link}>Portfolio</div>
                 </ScrollIntoView>
-                <ScrollIntoView selector="#gotanid" alignToTop={true}>
+                <ScrollIntoView selector="#contactId" alignToTop={true}>
                <div className={styles.link}>Contact</div>
                 </ScrollIntoView>
 </div>
