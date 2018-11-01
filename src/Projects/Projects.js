@@ -26,9 +26,15 @@ class Projects extends Component {
     openBox = () => {
         return (
           <Animated animationIn="fadeIn" animationInDelay={0} isVisible={true}>
-                <div className={styles.featureBox} onClick={this.toggleBox}>
+                <div className={styles.featureBox}>
                     <div className={styles.boxDesc} >
-                        <div className={styles.projTop}>{this.state.projTitle}</div>
+                        <div className={styles.projTop}>
+                        {this.state.projTitle}
+                        <div className={styles.barBox} onClick={this.toggleBox}>
+                                <div className={styles.bar1}></div>
+                                <div className={styles.bar2}></div>
+                        </div>
+                        </div>
                             <img src={this.state.projImg} className={styles.dispImg} alt={this.state.altTitle}></img>
                                 <div className={styles.projDescript}>{this.state.projDesc}</div>
                                     <div className={styles.btnBox}>
@@ -64,8 +70,8 @@ class Projects extends Component {
     handlePtech = () => {
           this.setState({
             projImg: "./PTechDisplay.png",
-            projDesc: "Piranha Technologies was built with React for our FrontEnd and runs with" 
-            + "a Node engine. The basis for this project was a marketing site to attract external"
+            projDesc: "Piranha Technologies was built with React for our FrontEnd and runs with " 
+            + "a Node engine. The basis for this project was a marketing site to attract external "
             + "businesses and show the services Piranha Technologies offers",
             projTitle: "Piranha Technologies",
             altTitle: "Piranha Technologies Image",

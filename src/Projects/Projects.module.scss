@@ -84,7 +84,7 @@ opacity: 0.3;
 }
 
 .boxDesc {
-    width: 60vw;
+    width: 70vw;
     height: 80%;
     margin-top: 5%;
     margin-left: auto;
@@ -157,8 +157,8 @@ opacity: 0.3;
     background-color: #bf0154;
     color: white;
     font-family: 'Roboto Slab', serif;
-    font-size: 30px;
-    height: 40px;
+    font-size: 36px;
+    height: 60px;
 }
 
 .projDescript {
@@ -175,6 +175,38 @@ opacity: 0.3;
   margin-right: 25%;
 
 }
+
+.barBox {
+        margin-top: 7px;
+        margin-left: 10px; 
+        border: 2px solid white;
+        height: 40px;
+        width: 50px;
+        display: block;
+        border-radius: 10%;
+        float: left;
+        cursor: pointer;
+}
+
+.bar1 {
+    width: 45px;
+    height: 7px;
+    background-color: white;
+    margin: 10px 10px;
+    transition: 0.4s;
+    -webkit-transform: rotate(-45deg) translate(-20px, -15px);
+    transform: rotate(-45deg) translate(-10px, 0px);
+  }
+
+  .bar2 {
+    transition: 0.4s;
+    width: 45px;
+    height: 7px;
+    background-color: white;
+    margin: 20px 20px;
+    -webkit-transform: rotate(-45deg) translate(-20px, 15px);
+    transform: rotate(45deg) translate(-26px, -2px);
+  }
 
 @media only screen and (max-width: 900px) {
 

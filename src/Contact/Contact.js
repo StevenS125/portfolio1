@@ -69,7 +69,7 @@ render() {
             <div className={styles.contactTitle}>CONTACT</div>
           </ScrollAnimation>
         
-
+          <ScrollAnimation animateIn="fadeInRight" animateOnce={true} animatePreScroll={false}>
    <div className={styles.forming}>
       
       <div className={styles.head}>
@@ -104,7 +104,7 @@ render() {
 
 </form>
         </div>
-
+</ScrollAnimation>
 
           </div>
 
