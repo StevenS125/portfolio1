@@ -177,9 +177,12 @@ opacity: 0.3;
 }
 
 .barBox {
+        position: none;
+        top: none;
+        left: none;
         margin-top: 7px;
         margin-left: 10px; 
-        border: 2px solid white;
+        border: 2px solid #bf0154;
         height: 40px;
         width: 50px;
         display: block;
@@ -234,6 +237,31 @@ opacity: 0.3;
     background-color: white;
     z-index: 2;
     cursor: auto;
+}
+
+.projTop {
+    width: 100%;
+    text-align: center;
+    background-color: #bf0154;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    height: 120px;
+}
+
+.barBox {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    margin-top: 7px;
+    margin-left: 10px; 
+    border: 2px solid white;
+    height: 40px;
+    width: 50px;
+    display: block;
+    border-radius: 10%;
+    float: none;
+    cursor: pointer;
 }
 
 }

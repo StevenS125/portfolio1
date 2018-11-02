@@ -30,14 +30,14 @@ class Projects extends Component {
                     <div className={styles.boxDesc} >
                         <div className={styles.projTop}>
                         {this.state.projTitle}
-                        <div className={styles.barBox} onClick={this.toggleBox}>
-                                <div className={styles.bar1}></div>
-                                <div className={styles.bar2}></div>
-                        </div>
                         </div>
                             <img src={this.state.projImg} className={styles.dispImg} alt={this.state.altTitle}></img>
                                 <div className={styles.projDescript}>{this.state.projDesc}</div>
                                     <div className={styles.btnBox}>
+                                    <div className={styles.barBox} onClick={this.toggleBox}>
+                                <div className={styles.bar1}></div>
+                                <div className={styles.bar2}></div>
+                        </div>
                                 <div className={styles.projBottom}><a href={this.state.siteLink} target="blank"><button className={styles.projBtn}>View Site</button></a></div> 
                                 <div className={styles.projBottom}><a href={this.state.gitLink} target="blank"><button className={styles.projBtn}>Github</button></a></div>
                                     </div>
