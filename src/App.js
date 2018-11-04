@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 // Animate.css import for scrollAnimation
 import "animate.css/animate.min.css";
+import styles from './App.module.scss';
 
 
 //components
