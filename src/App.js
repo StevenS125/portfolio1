@@ -29,7 +29,7 @@ library.add(faPalette, faCode, faLaptop, faGithub, faFacebook, faTwitter, faLink
 class App extends Component {
   render() {
     return (
-      <div>
+         <div className={styles.container}>
 <Landing />
 <Nav />  
 <About />
