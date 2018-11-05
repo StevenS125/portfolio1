@@ -85,8 +85,8 @@ opacity: 0.3;
 
 .boxDesc {
     width: 70vw;
-    height: 80%;
-    margin-top: 5%;
+    height: 90%;
+    margin-top: 2.5%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -163,7 +163,7 @@ opacity: 0.3;
 
 .projDescript {
     width: 90%;
-    margin: 5%;
+    margin: 2.5% 5%;
     color: #444649;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
@@ -177,12 +177,12 @@ opacity: 0.3;
 }
 
 .barBox {
-        position: none;
+        position: static;
         top: none;
         left: none;
         margin-top: 7px;
         margin-left: 10px; 
-        border: 2px solid #bf0154;
+        border: 2px solid white;
         height: 40px;
         width: 50px;
         display: block;
