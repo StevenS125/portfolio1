@@ -230,7 +230,7 @@ opacity: 0.3;
 
 .boxDesc {
     width: 90vw;
-    height: 900px;;
+    height: 80vh;;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -240,29 +240,64 @@ opacity: 0.3;
 }
 
 .projTop {
-    padding-left: 10%;
-    width: 90%;
+    padding-left: 12%;
+    width: 88%;
     text-align: center;
     background-color: #bf0154;
     color: white;
     font-family: 'Roboto Slab', serif;
-    font-size: 36px;
+    font-size: 48px;
     height: 120px;
 }
 
 .barBox {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 45px;
+    left: 45px;
     margin-top: 7px;
     margin-left: 10px; 
     border: 2px solid white;
-    height: 40px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     display: block;
     border-radius: 10%;
     float: none;
     cursor: pointer;
 }
 
+.bar1 {
+    width: 58px;
+    height: 10px;
+    background-color: white;
+    margin: 10px 10px;
+    transition: 0.4s;
+    -webkit-transform: rotate(-45deg) translate(-20px, -15px);
+    transform: rotate(-45deg) translate(-17px, 5px);
+  }
+
+  .bar2 {
+    transition: 0.4s;
+    width: 58px;
+    height: 10px;
+    background-color: white;
+    margin: 20px 20px;
+    -webkit-transform: rotate(-45deg) translate(-20px, 15px);
+    transform: rotate(45deg) translate(-23px, 3px);
+  }
+
+
+  .dispImg {
+    width: 90%;
+    margin-left: 2%;
+    margin-right: 5%;
+  
+  }
+
+  .projDescript {
+    width: 90%;
+    margin: 2.5% 5%;
+    color: #444649;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+}
 }
