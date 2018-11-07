@@ -33,3 +33,12 @@
     color: white;
     width: 100%;
 }
+
+@media (max-width: 900px) {
+
+    .footContainer {
+        height: 270px;
+        width: 100%;
+        background: #1B242F;
+    }
+}
