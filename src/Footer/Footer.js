@@ -14,6 +14,8 @@ class Footer extends Component {
 
 
 render() {
+    const myDate = new Date()
+
     return (
 <div>
     <div className={styles.footContainer}>
@@ -22,7 +24,7 @@ render() {
 <div><a className={styles.icons} href="https://github.com/stevens125" target="blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a></div>  
 <div><a className={styles.icons} href="https://www.linkedin.com/in/steven-snyder/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></div> 
 </div>
-<div className={styles.footName}>Steve Snyder &copy; 2018</div>
+<div className={styles.footName}>Steve Snyder &copy; {myDate.getFullYear()}</div>
 </div>
 </div>
     )

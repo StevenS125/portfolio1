@@ -73,15 +73,6 @@ render() {
 </div>
 
           </div>
-          {/* <div className={styles.navbarMobile}>
-                         <div className={styles.burger} onClick={this.toggleList}>
-                                <div className={this.state.bar1}></div>
-                                <div className={this.state.bar2}></div>
-                                <div className={this.state.bar3}></div>
-                              </div>
-                          <div className={styles.mobileHead}>Piranha Technologies</div>
-                        
-                      </div>         */}
           <div className={styles.mobileRow}>
       { this.state.listopen ? this.openList() : false }
               </div>
