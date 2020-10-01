@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import ContactDialog from './ContactDialogue';
 
 function Copyright() {
   return (
@@ -88,17 +89,15 @@ export default function Album() {
               entirely.
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
+              <Grid container spacing={1} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
+                    <ContactDialog />
                 </Grid>
-                <Grid item>
+                {/* <Grid item>
                   <Button variant="outlined" color="primary">
-                    Secondary action
+                    Check out My Github
                   </Button>
-                </Grid>
+                </Grid> */}
               </Grid>
             </div>
           </Container>
