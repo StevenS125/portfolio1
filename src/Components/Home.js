@@ -1,7 +1,6 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -14,6 +13,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import ContactDialog from './ContactDialogue';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import HomeIcon from '@material-ui/icons/Home';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function Copyright() {
   return (
@@ -60,7 +62,45 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = 
+[
+  { 
+    name:"Acthar.com Redesign",
+    description: "Site Redesign for Acthar.com",
+    img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.26.54+PM.png",
+    webLink: "Acthar.com"
+  },
+  { 
+    name:"Dash Reel",
+    description: "Web Page for Inspirational Speaker built with React",
+    img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.44.47+PM.png",
+    webLink: ""
+  },
+  { 
+    name:"straight talk today",
+    description: "Web Page for Inspirational Speaker built with React",
+    img: "https://searchforsteve.s3.amazonaws.com/STT.png",
+    webLink: ""
+  },
+  { 
+    name:"Girlfriend.com Returns",
+    description: "Web Page for Inspirational Speaker built with React",
+    img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.07.54+AM.png",
+    webLink: ""
+  },
+  { 
+    name:"Embr Labs Returns",
+    description: "Web Page for Inspirational Speaker built with React",
+    img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.27.09+AM.png",
+    webLink: ""
+  },
+  { 
+    name:"straight talk today",
+    description: "Web Page for Inspirational Speaker built with React",
+    img: "https://source.unsplash.com/random",
+    webLink: ""
+  }
+];
 
 export default function Album() {
   const classes = useStyles();
@@ -70,9 +110,9 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon className={classes.icon} />
+          <HomeIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
-            Steven Snyder 
+            Steven Snyder
           </Typography>
         </Toolbar>
       </AppBar>
@@ -81,12 +121,10 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Steven Snyder's Portfolio
+              Steven Snyder <br></br>Full Stack Developer
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+                Check out my Porfessional Portfolio Below! 
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
@@ -106,19 +144,19 @@ export default function Album() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image={card.img}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      {card.name}
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      {card.description}
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -137,9 +175,16 @@ export default function Album() {
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
+        
+        <Typography variant="h6" color="primary" align="center" gutterBottom>
+          <Link href="https://www.linkedin.com/in/steven-snyder/">
+            <LinkedInIcon />
+          </Link>
+          <Link href="https://github.com/StevenS125" >
+            <GitHubIcon />
+          </Link>
         </Typography>
+
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Something here to give the footer a purpose!
         </Typography>
