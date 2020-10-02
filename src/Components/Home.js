@@ -68,37 +68,37 @@ const cards =
     name:"Acthar.com Redesign",
     description: "Site Redesign for Acthar.com",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.26.54+PM.png",
-    webLink: "Acthar.com"
+    webLink: "https://Acthar.com"
   },
   { 
     name:"Dash Reel",
     description: "Web Page for Inspirational Speaker built with React",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.44.47+PM.png",
-    webLink: ""
+    webLink: "https://dashreel.com"
   },
   { 
-    name:"straight talk today",
+    name:"Project Completion",
     description: "Web Page for Inspirational Speaker built with React",
-    img: "https://searchforsteve.s3.amazonaws.com/STT.png",
-    webLink: ""
+    img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+3.33.43+PM.png",
+    webLink: "https://projectcompletionpro.com"
   },
   { 
     name:"Girlfriend.com Returns",
     description: "Web Page for Inspirational Speaker built with React",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.07.54+AM.png",
-    webLink: ""
+    webLink: "https://girlfriend.com"
   },
   { 
     name:"Embr Labs Returns",
     description: "Web Page for Inspirational Speaker built with React",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.27.09+AM.png",
-    webLink: ""
+    webLink: "https://embrlabs.com"
   },
   { 
-    name:"straight talk today",
+    name:"Straight Talk Today",
     description: "Web Page for Inspirational Speaker built with React",
-    img: "https://source.unsplash.com/random",
-    webLink: ""
+    img: "https://searchforsteve.s3.amazonaws.com/STT.png",
+    webLink: "http://straighttalktoday.com"
   }
 ];
 
@@ -160,12 +160,14 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
+                    <Link href={card.webLink}>
                     <Button size="small" color="primary">
                       View
                     </Button>
-                    <Button size="small" color="primary">
+                    </Link>
+                    {/* <Button size="small" color="primary">
                       Edit
-                    </Button>
+                    </Button> */}
                   </CardActions>
                 </Card>
               </Grid>
@@ -185,9 +187,9 @@ export default function Album() {
           </Link>
         </Typography>
 
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+        {/* <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Something here to give the footer a purpose!
-        </Typography>
+        </Typography> */}
         <Copyright />
       </footer>
       {/* End footer */}
