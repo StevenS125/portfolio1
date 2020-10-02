@@ -65,38 +65,38 @@ const useStyles = makeStyles((theme) => ({
 const cards = 
 [
   { 
-    name:"Acthar.com Redesign",
-    description: "Site Redesign for Acthar.com",
+    name:"Acthar Redesign",
+    description: "Complete Site Redesign for Acthar.com that utilized my Front End Development, JavaScript/JQuery, HTML and CSS Skills",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.26.54+PM.png",
     webLink: "https://Acthar.com"
   },
   { 
     name:"Dash Reel",
-    description: "Web Page for Inspirational Speaker built with React",
+    description: "Completed Landing Page for Athletic Company that connects people to Athletes, Built with React and Bootstrap 4",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.44.47+PM.png",
     webLink: "https://dashreel.com"
   },
   { 
     name:"Project Completion",
-    description: "Web Page for Inspirational Speaker built with React",
+    description: "Web Site for Charlotte Home Maintenance Services, built with Bootstrap 4, HTML, CSS and Javascript",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+3.33.43+PM.png",
     webLink: "https://projectcompletionpro.com"
   },
   { 
     name:"Girlfriend.com Returns",
-    description: "Web Page for Inspirational Speaker built with React",
+    description: "Mobile First UI/UX, Responsive web design provided for Returns Sections of girlfriend.com shopify site, Utilized JavaScript, HTML and CSS Skills",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.07.54+AM.png",
     webLink: "https://girlfriend.com"
   },
   { 
     name:"Embr Labs Returns",
-    description: "Web Page for Inspirational Speaker built with React",
+    description: "Mobile First UI/UX, Responsive web design provided for Returns Sections of embrlabs.com shopify site, Utilized JavaScript, HTML and CSS Skills",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.27.09+AM.png",
     webLink: "https://embrlabs.com"
   },
   { 
     name:"Straight Talk Today",
-    description: "Web Page for Inspirational Speaker built with React",
+    description: "Web Site for Inspirational Speaker built with React to bring awareness of services",
     img: "https://searchforsteve.s3.amazonaws.com/STT.png",
     webLink: "http://straighttalktoday.com"
   }
