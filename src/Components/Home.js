@@ -64,37 +64,42 @@ const useStyles = makeStyles((theme) => ({
 
 const cards = 
 [
-  { 
+  { id: 1,
     name:"Acthar Redesign",
     description: "Complete Site Redesign for Acthar.com that utilized my Front End Development, JavaScript/JQuery, HTML and CSS Skills",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.26.54+PM.png",
     webLink: "https://Acthar.com"
   },
   { 
+    id: 2,
     name:"Dash Reel",
     description: "Completed Landing Page for Athletic Company that connects people to Athletes, Built with React and Bootstrap 4",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+2.44.47+PM.png",
     webLink: "https://dashreel.com"
   },
   { 
+    id: 3,
     name:"Project Completion",
     description: "Web Site for Charlotte Home Maintenance Services, built with Bootstrap 4, HTML, CSS and Javascript",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+3.33.43+PM.png",
     webLink: "https://projectcompletionpro.com"
   },
   { 
+    id: 4,
     name:"Girlfriend.com Returns",
     description: "Mobile First UI/UX, Responsive web design provided for Returns Sections of girlfriend.com shopify site, Utilized JavaScript, HTML and CSS Skills",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.07.54+AM.png",
     webLink: "https://girlfriend.com"
   },
   { 
+    id: 5,
     name:"Embr Labs Returns",
     description: "Mobile First UI/UX, Responsive web design provided for Returns Sections of embrlabs.com shopify site, Utilized JavaScript, HTML and CSS Skills",
     img: "https://searchforsteve.s3.amazonaws.com/Screen+Shot+2020-10-02+at+11.27.09+AM.png",
     webLink: "https://embrlabs.com"
   },
   { 
+    id: 6,
     name:"Straight Talk Today",
     description: "Web Site for Inspirational Speaker built with React to bring awareness of services",
     img: "https://searchforsteve.s3.amazonaws.com/STT.png",
@@ -144,7 +149,7 @@ export default function Album() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={6}>
+              <Grid item key={card.id} xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
