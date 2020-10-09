@@ -16,6 +16,7 @@ import ContactDialog from './ContactDialogue';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import HomeIcon from '@material-ui/icons/Home';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 function Copyright() {
   return (
@@ -189,6 +190,9 @@ export default function Album() {
           </Link>
           <Link href="https://github.com/StevenS125" >
             <GitHubIcon />
+          </Link>
+          <Link href="https://www.facebook.com/stevensnyderisthebest/" >
+            <FacebookIcon />
           </Link>
         </Typography>
 
