@@ -25,22 +25,20 @@ export default function ContactDialog() {
     from_name: name,
     to_name: 'Steven Snyder',
     subject: "New Message from " + name,
-    message_html: message,
+    message: `Reply to ${name} at  ${email} 
+               ${message}`,
    }
 
    const handleEmail = (event) => {
     setEmail(event.target.value)
-    console.log(email)
    }
 
    const handleName = (event) => {
     setName(event.target.value)
-    console.log(name)
    }
 
    const handleMessage = (event) => {
     setMessage(event.target.value)
-    console.log(message)
    }
 
   const handleClickOpen = () => {
