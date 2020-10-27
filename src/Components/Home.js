@@ -22,7 +22,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="inherit" href="https://searchforsteve.com/">
         Steven Snyder
       </Link>{' '}
       {new Date().getFullYear()}
@@ -137,11 +137,6 @@ export default function Album() {
                 <Grid item>
                     <ContactDialog />
                 </Grid>
-                {/* <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Check out My Github
-                  </Button>
-                </Grid> */}
               </Grid>
             </div>
           </Container>
@@ -171,9 +166,6 @@ export default function Album() {
                       View
                     </Button>
                     </Link>
-                    {/* <Button size="small" color="primary">
-                      Edit
-                    </Button> */}
                   </CardActions>
                 </Card>
               </Grid>
@@ -195,10 +187,6 @@ export default function Album() {
             <FacebookIcon />
           </Link>
         </Typography>
-
-        {/* <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography> */}
         <Copyright />
       </footer>
       {/* End footer */}

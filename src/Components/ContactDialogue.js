@@ -6,17 +6,73 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import * as emailjs from 'emailjs-com'
+import DialogueSnackBar from './DialogueSnackBar';
 
 export default function ContactDialog() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false)
+  const [name, setName] = React.useState("")
+  const [email, setEmail] = React.useState("testing from name")
+  const [message, setMessage] = React.useState("testing message")
+  const [snackBarOpen, setSnackBarOpen] = React.useState(false)
+  const [snackbarState, setSnackbarState] = React.useState("success")
+
+  let serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
+  let templateId = process.env.REACT_APP_TEMPLATE_ID;
+  let userId = process.env.REACT_APP_USER_ID
+
+  let templateParams = {
+    from_name: name,
+    to_name: 'Steven Snyder',
+    subject: "New Message from " + name,
+    message_html: message,
+   }
+
+   const handleEmail = (event) => {
+    setEmail(event.target.value)
+    console.log(email)
+   }
+
+   const handleName = (event) => {
+    setName(event.target.value)
+    console.log(name)
+   }
+
+   const handleMessage = (event) => {
+    setMessage(event.target.value)
+    console.log(message)
+   }
 
   const handleClickOpen = () => {
     setOpen(true);
+    
   };
 
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleSubmit = () => {
+    emailjs.send(serviceId, templateId, templateParams, userId)
+    .then(() => {
+
+      setSnackBarOpen(true)
+      setSnackbarState("success")
+      console.log(process.env.REACT_APP_EMAIL_SERVICE_ID)
+      setTimeout(() => {
+        setSnackBarOpen(false)  
+      }, 6000);
+    }, (err) => {
+      setSnackBarOpen(true)
+      setSnackbarState("error")
+      console.log(process.env.REACT_APP_EMAIL_SERVICE_ID)
+      setTimeout(() => {
+        setSnackBarOpen(false)  
+      }, 6000);
+    });
+      // templateParams, userID);
+      setOpen(false);
+  }
 
   return (
     <div>
@@ -27,7 +83,7 @@ export default function ContactDialog() {
         <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To connect with me, please enter your email address here
+            To connect with me, please enter your information here
           </DialogContentText>
           <TextField
             autoFocus
@@ -35,22 +91,25 @@ export default function ContactDialog() {
             id="email"
             label="Email Address"
             type="email"
+            onChange={handleEmail}
             fullWidth
           />
-                    <TextField
+          <TextField
             autoFocus
             margin="dense"
             id="name"
             label="Name"
             type="text"
+            onChange={handleName}
             fullWidth
           />
-                    <TextField
+          <TextField
             autoFocus
             margin="dense"
             id="message"
             label="Message"
             type="text"
+            onChange={handleMessage}
             fullWidth
           />
         </DialogContent>
@@ -58,11 +117,14 @@ export default function ContactDialog() {
           <Button onClick={handleClose} color="primary">
             Cancel
           </Button>
-          <Button onClick={handleClose} color="primary">
-            Subscribe
+          <Button onClick={handleSubmit} color="primary">
+            Submit
           </Button>
         </DialogActions>
       </Dialog>
+      { snackBarOpen &&
+      <DialogueSnackBar alertState={snackbarState} />
+}
     </div>
   );
 }
