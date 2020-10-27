@@ -103,6 +103,8 @@ export default function ContactDialog() {
           />
           <TextField
             autoFocus
+            multiline
+            rowsMax={4}
             margin="dense"
             id="message"
             label="Message"
@@ -110,6 +112,7 @@ export default function ContactDialog() {
             onChange={handleMessage}
             fullWidth
           />
+
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
