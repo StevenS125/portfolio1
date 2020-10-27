@@ -12,8 +12,8 @@ import DialogueSnackBar from './DialogueSnackBar';
 export default function ContactDialog() {
   const [open, setOpen] = React.useState(false)
   const [name, setName] = React.useState("")
-  const [email, setEmail] = React.useState("testing from name")
-  const [message, setMessage] = React.useState("testing message")
+  const [email, setEmail] = React.useState("")
+  const [message, setMessage] = React.useState("")
   const [snackBarOpen, setSnackBarOpen] = React.useState(false)
   const [snackbarState, setSnackbarState] = React.useState("success")
 
@@ -56,19 +56,21 @@ export default function ContactDialog() {
 
       setSnackBarOpen(true)
       setSnackbarState("success")
-      console.log(process.env.REACT_APP_EMAIL_SERVICE_ID)
       setTimeout(() => {
         setSnackBarOpen(false)  
       }, 6000);
+      // Reset Form
+      setName("")
+      setEmail("")
+      setMessage("")
+
     }, (err) => {
       setSnackBarOpen(true)
       setSnackbarState("error")
-      console.log(process.env.REACT_APP_EMAIL_SERVICE_ID)
       setTimeout(() => {
         setSnackBarOpen(false)  
       }, 6000);
     });
-      // templateParams, userID);
       setOpen(false);
   }
 
@@ -79,7 +81,7 @@ export default function ContactDialog() {
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
-        <DialogContent>
+        <DialogContent  >
           <DialogContentText>
             To connect with me, please enter your information here
           </DialogContentText>
@@ -89,6 +91,7 @@ export default function ContactDialog() {
             id="email"
             label="Email Address"
             type="email"
+            value={email}
             onChange={handleEmail}
             fullWidth
           />
@@ -98,6 +101,7 @@ export default function ContactDialog() {
             id="name"
             label="Name"
             type="text"
+            value={name}
             onChange={handleName}
             fullWidth
           />
@@ -109,6 +113,7 @@ export default function ContactDialog() {
             id="message"
             label="Message"
             type="text"
+            value={message}
             onChange={handleMessage}
             fullWidth
           />
