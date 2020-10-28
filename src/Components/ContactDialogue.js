@@ -19,6 +19,10 @@ export default function ContactDialog() {
   const [emailValid, setEmailValid] = React.useState(false)
   const [nameValid, setNameValid] = React.useState(false)
   const [messageValid, setMessageValid] = React.useState(false)
+  const [emailHelper, setEmailHelper] =React.useState("")
+  const [nameHelper, setNameHelper] =React.useState("")
+  const [messageHelper, setMessageHelper] =React.useState("")
+
 
   let serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
   let templateId = process.env.REACT_APP_TEMPLATE_ID;
@@ -31,17 +35,25 @@ export default function ContactDialog() {
     message: `Reply to ${name} at  ${email} 
                ${message}`,
    }
+   const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
    const handleEmail = (event) => {
     setEmail(event.target.value)
+    !email.match(mailformat) ? setEmailValid(true) : setEmailValid(false)
+    !email.match(mailformat) ? setEmailHelper("Please Enter a valid Email") :setEmailHelper("") 
    }
 
    const handleName = (event) => {
     setName(event.target.value)
+    name.length < 6 ? setNameValid(true) : setNameValid(false)
+    name.length < 6 ? setNameHelper("Please Enter a Name more than 6 Characters") : setNameHelper("")
+
    }
 
    const handleMessage = (event) => {
     setMessage(event.target.value)
+    message.length < 15 ? setMessageValid(true) :setMessageValid(false)
+    message.length < 15 ? setMessageHelper("Please eneter a message more than 15 characters") :setMessageHelper("")
    }
 
   //  Open and close dialogue
@@ -54,15 +66,17 @@ export default function ContactDialog() {
   };
 
   const handleSubmit = () => {
-    const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if(!email.match(mailformat) || name.length < 3 || message.length < 3) {
+    if(!email.match(mailformat) || name.length < 6 || message.length < 15) {
       // Form Validators
-      !email.match(mailformat) ? setEmailValid(true) : setEmailValid(false) 
+      !email.match(mailformat) ? setEmailValid(true) : setEmailValid(false)
+      !email.match(mailformat) ? setEmailHelper("Please Enter a valid Email") :setEmailHelper("") 
       name.length < 3 ? setNameValid(true) : setNameValid(false)
-      message.length < 3 ? setMessageValid(true) :setMessageValid(false)
+      name.length < 6 ? setNameHelper("Please Enter a Name more than 6 Characters") : setNameHelper("")
+      message.length < 15 ? setMessageValid(true) :setMessageValid(false)
+      message.length < 15 ? setMessageHelper("Please eneter a message more than 15 characters") :setMessageHelper("")
 
     } else {
-
+      // Reset Form Erros if 
       setNameValid(false)
       setMessageValid(false)
       setEmailValid(false)
@@ -115,6 +129,7 @@ export default function ContactDialog() {
             value={email}
             onChange={handleEmail}
             fullWidth
+            helperText={emailHelper}
           />
           <TextField
             error={nameValid}
@@ -127,6 +142,7 @@ export default function ContactDialog() {
             value={name}
             onChange={handleName}
             fullWidth
+            helperText={nameHelper}
           />
           <TextField
             error={messageValid}
@@ -141,6 +157,7 @@ export default function ContactDialog() {
             value={message}
             onChange={handleMessage}
             fullWidth
+            helperText={messageHelper}
           />
 
         </DialogContent>
