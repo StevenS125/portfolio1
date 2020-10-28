@@ -16,6 +16,9 @@ export default function ContactDialog() {
   const [message, setMessage] = React.useState("")
   const [snackBarOpen, setSnackBarOpen] = React.useState(false)
   const [snackbarState, setSnackbarState] = React.useState("success")
+  const [emailValid, setEmailValid] = React.useState(false)
+  const [nameValid, setNameValid] = React.useState(false)
+  const [messageValid, setMessageValid] = React.useState(false)
 
   let serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
   let templateId = process.env.REACT_APP_TEMPLATE_ID;
@@ -41,9 +44,9 @@ export default function ContactDialog() {
     setMessage(event.target.value)
    }
 
+  //  Open and close dialogue
   const handleClickOpen = () => {
     setOpen(true);
-    
   };
 
   const handleClose = () => {
@@ -51,6 +54,20 @@ export default function ContactDialog() {
   };
 
   const handleSubmit = () => {
+    const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(!email.match(mailformat) || name.length < 3 || message.length < 3) {
+      // Form Validators
+      !email.match(mailformat) ? setEmailValid(true) : setEmailValid(false) 
+      name.length < 3 ? setNameValid(true) : setNameValid(false)
+      message.length < 3 ? setMessageValid(true) :setMessageValid(false)
+
+    } else {
+
+      setNameValid(false)
+      setMessageValid(false)
+      setEmailValid(false)
+
+    // Email Service and reset form
     emailjs.send(serviceId, templateId, templateParams, userId)
     .then(() => {
 
@@ -72,6 +89,8 @@ export default function ContactDialog() {
       }, 6000);
     });
       setOpen(false);
+
+}
   }
 
   return (
@@ -86,6 +105,8 @@ export default function ContactDialog() {
             To connect with me, please enter your information here
           </DialogContentText>
           <TextField
+            error={emailValid}
+            required
             autoFocus
             margin="dense"
             id="email"
@@ -96,6 +117,8 @@ export default function ContactDialog() {
             fullWidth
           />
           <TextField
+            error={nameValid}
+            required
             autoFocus
             margin="dense"
             id="name"
@@ -106,6 +129,8 @@ export default function ContactDialog() {
             fullWidth
           />
           <TextField
+            error={messageValid}
+            required
             autoFocus
             multiline
             rowsMax={4}
